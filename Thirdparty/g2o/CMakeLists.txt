@@ -176,3 +176,21 @@ g2o/stuff/string_tools.cpp
 g2o/stuff/property.cpp       
 g2o/stuff/property.h       
 )
+
+install(
+  DIRECTORY ${PROJECT_NAME}/
+  DESTINATION g2o
+)
+
+install(
+  FILES config.h
+  DESTINATION .
+)
+
+install(
+  TARGETS ${PROJECT_NAME}
+  EXPORT ${PROJECT_NAME}-targets
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)

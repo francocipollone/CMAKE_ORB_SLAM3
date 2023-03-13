@@ -154,5 +154,5 @@ install(
 # Install header files
 install(
   FILES ${SOPHUS_HEADER_FILES}
-  DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/sophus
+  DESTINATION sophus
 )
